@@ -4,181 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ольга — QA Engineer</title>
-<meta name="description" content="Ольга: QA-инженер, тестирование SAP и e-commerce. Люблю путешествия, воспитываю детей и делаю проект для детей.">
+<meta name="description" content="Ольга: QA-инженер, тестирование SAP и e-commerce. Люблю путешествия, мама двойняшек.">
+<script>try{var d=document.documentElement,t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.dataset.theme=t}catch(e){}document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --accent:#2f7d6d;
-  --accent-2:#e0833b;
-  --brown:#7a4a2b;
-  --ink:#1f2a2e;
-  --muted:#5b6a6f;
-  --paper:#f6f4ee;
-  --card:#ffffff;
-  --line:#e3ded2;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  background:var(--paper);color:var(--ink);
-  line-height:1.7;font-size:18px;-webkit-font-smoothing:antialiased;
-  position:relative;
-}
-.bugs{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
-.deco{position:absolute;opacity:.45}
-h1,h2,h3,.sans{font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif}
-img{display:block;max-width:100%}
-a{color:var(--accent)}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px}
-section{padding:72px 0 0}
-.eyebrow{
-  font-family:"Segoe UI",system-ui,sans-serif;text-transform:uppercase;
-  letter-spacing:.18em;font-size:.75rem;color:var(--accent);font-weight:600;margin-bottom:10px;
-}
-h2{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.2;margin-bottom:24px;font-weight:700;color:var(--brown)}
-p+p{margin-top:1em}
-
-/* hero */
-.hero{background:#ebe6d9;color:var(--ink)}
-.hero .wrap{
-  display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;
-  padding-top:64px;padding-bottom:64px;
-}
-.hero .eyebrow{color:var(--accent)}
-.hero h1{color:var(--brown);font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(2.8rem,8vw,4.6rem);line-height:1;font-weight:700;letter-spacing:.01em;margin-bottom:14px;position:relative}
-.hero .maiden{font-family:"Segoe UI",sans-serif;color:#b9c7c9;margin-bottom:18px}
-.hero .lead{font-style:italic;font-size:clamp(1.2rem,2.8vw,1.45rem);line-height:1.6;color:var(--ink);max-width:32em}
-.tags{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
-.tag{
-  padding:7px 15px;border:1px solid rgba(31,42,46,.25);border-radius:999px;
-  font-family:"Segoe UI",sans-serif;font-size:.85rem;background:rgba(255,255,255,.7);
-}
-.hero-text{position:relative;padding:34px 0}
-.hero-text>h1,.hero-text>.lead{position:relative;z-index:1}
-.lens{position:absolute;left:50%;top:50%;width:min(480px,118%);height:auto;transform:translate(-57.4%,-44.7%);z-index:0;pointer-events:none}
-.portrait{border-radius:16px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 14px 30px rgba(31,42,46,.18)}
-.portrait img{width:100%;height:100%;object-fit:cover}
-
-/* about */
-.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
-.traits{list-style:none;display:grid;gap:12px}
-.traits li{
-  background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
-  padding:14px 18px;border-radius:8px;font-size:1rem;
-}
-.about-blocks{grid-template-columns:repeat(3,1fr);gap:16px}
-.about-blocks li{padding:20px 22px;font-size:1.02rem;box-shadow:0 1px 0 rgba(31,42,46,.04)}
-.traits b{font-family:"Segoe UI",sans-serif;display:block;font-size:.8rem;
-  text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:2px}
-
-/* experience */
-.timeline{list-style:none;border-left:2px solid var(--line);padding-left:24px}
-.timeline li{position:relative;margin-bottom:26px}
-.timeline li::before{
-  content:"";position:absolute;left:-32px;top:.6em;width:12px;height:12px;border-radius:50%;
-  background:var(--accent);border:3px solid var(--paper);box-sizing:content-box;
-}
-.timeline .when{font-family:"Segoe UI",sans-serif;font-size:.82rem;color:var(--accent);font-weight:700;letter-spacing:.04em}
-.timeline h3{font-size:1.15rem;margin:2px 0 4px}
-.timeline p{font-size:.98rem;color:var(--muted)}
-
-/* two columns: education / skills */
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
-.card h3{font-size:1.05rem;margin-bottom:12px}
-.card ul{list-style:none;display:grid;gap:10px;font-size:.96rem}
-.card li small{display:block;font-family:"Segoe UI",sans-serif;color:var(--muted);font-size:.8rem}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{
-  font-family:"Segoe UI",sans-serif;font-size:.82rem;padding:5px 12px;border-radius:999px;
-  background:#e6f1ee;color:#1f5a4e;border:1px solid #cfe3dd;
-}
-
-.perks{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:24px 0}
-.perks .card{padding:20px 22px}
-.perks .card h3{font-size:1.02rem;margin-bottom:6px}
-.perks .card p{font-size:.95rem;color:var(--muted)}
-
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery figure{border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
-.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.gallery figcaption{font-family:"Segoe UI",sans-serif;font-size:.8rem;color:var(--muted);padding:8px 10px}
-.wide-photo{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.wide-photo figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
-.wide-photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.wide-photo figcaption{font-family:"Segoe UI",sans-serif;font-size:.8rem;color:var(--muted);padding:8px 10px}
-
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;list-style:none;counter-reset:f}
-.facts li{
-  counter-increment:f;background:var(--card);border:1px solid var(--line);
-  border-radius:12px;padding:22px;font-size:.98rem;
-}
-.facts li::before{
-  content:counter(f,decimal-leading-zero);font-family:"Segoe UI",sans-serif;
-  font-weight:800;color:var(--accent-2);font-size:1.4rem;display:block;margin-bottom:4px;
-}
-
-/* contacts */
-.contacts{
-  margin-top:80px;background:#ebe6d9;color:var(--ink);padding:56px 0;
-}
-.contacts h2{margin-bottom:12px}
-.contacts p{color:var(--muted)}
-.links{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
-.links a{
-  font-family:"Segoe UI",sans-serif;text-decoration:none;color:var(--ink);
-  border:1px solid rgba(31,42,46,.35);padding:10px 20px;border-radius:999px;
-}
-.links a:hover{background:var(--accent);border-color:var(--accent);color:#fff}
-footer.note{padding:20px 0 32px;font-family:"Segoe UI",sans-serif;font-size:.75rem;color:var(--muted)}
-
-@media (max-width:760px){
-  body{font-size:17px}
-  section{padding-top:56px}
-  .hero .wrap,.about-grid,.cols,.facts{grid-template-columns:1fr}
-  .about-blocks{grid-template-columns:repeat(2,1fr)}
-  .perks{grid-template-columns:1fr}
-  .portrait{max-width:320px}
-  .lens{width:125%}
-  .gallery{grid-template-columns:repeat(2,1fr)}
-  .deco-extra{display:none}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="bug" viewBox="0 0 60 70">
-    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M23 15 Q19 7 12 5 M37 15 Q41 7 48 5"/>
-      <path d="M15 28 L4 22 M14 42 L2 42 M16 56 L5 64 M45 28 L56 22 M46 42 L58 42 M44 56 L55 64"/>
-      <path d="M22 22 Q30 14 38 22 L40 45 Q40 62 30 64 Q20 62 20 45 Z" fill="currentColor" fill-opacity=".25"/>
-      <path d="M21 36 H39 M21 48 H39 M30 26 V64"/>
-    </g>
-  </symbol>
-</svg>
-<div class="bugs" aria-hidden="true">
-  <svg class="deco" style="top:13%;left:3%;width:28px;height:32px;transform:rotate(-25deg);color:#e0833b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:18%;left:93%;width:24px;height:28px;transform:rotate(40deg);color:#2f7d6d" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco" style="top:27%;left:6%;width:22px;height:25px;transform:rotate(70deg);color:#7a4a2b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:34%;left:90%;width:30px;height:35px;transform:rotate(-50deg);color:#e0833b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco" style="top:41%;left:2%;width:26px;height:30px;transform:rotate(15deg);color:#2f7d6d" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:47%;left:95%;width:22px;height:25px;transform:rotate(120deg);color:#7a4a2b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco" style="top:54%;left:5%;width:30px;height:35px;transform:rotate(-70deg);color:#e0833b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:61%;left:92%;width:26px;height:30px;transform:rotate(25deg);color:#2f7d6d" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco" style="top:69%;left:3%;width:22px;height:25px;transform:rotate(95deg);color:#7a4a2b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:76%;left:94%;width:28px;height:32px;transform:rotate(-35deg);color:#e0833b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco" style="top:84%;left:7%;width:24px;height:28px;transform:rotate(55deg);color:#2f7d6d" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-  <svg class="deco deco-extra" style="top:90%;left:90%;width:26px;height:30px;transform:rotate(-110deg);color:#7a4a2b" viewBox="0 0 60 70" aria-hidden="true"><use href="#bug"/></svg>
-</div>
+<nav class="site-nav" aria-label="Основное меню">
+  <div class="wrap nav-in">
+    <ul class="menu" id="menu">
+      <li><a href="index.html" aria-current="page">Главная</a></li>
+      <li><a href="about.html">Обо мне</a></li>
+      <li><a href="skills.html">Навыки</a></li>
+      <li><a href="travel.html">Путешествия</a></li>
+      <li><a href="facts.html">Факты</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Тёмная тема" aria-pressed="false">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</nav>
 
 <header class="hero">
   <div class="wrap">
     <div class="hero-text">
-      <svg class="lens" viewBox="0 0 540 470" aria-hidden="true">
+      <svg class="lens" viewBox="0 0 540 470" role="group" aria-label="Лупа">
         <defs>
           <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stop-color="#ffffff" stop-opacity=".75"/>
@@ -189,10 +42,11 @@ footer.note{padding:20px 0 32px;font-family:"Segoe UI",sans-serif;font-size:.75r
           <path d="M372 352 L505 458" stroke="#4a4f54" stroke-width="34" stroke-linecap="round"/>
           <path d="M388 358 L496 444" stroke="#9aa0a6" stroke-width="12" stroke-linecap="round" opacity=".9"/>
           <path d="M352 332 L392 372" stroke="#8a8f94" stroke-width="40" stroke-linecap="round"/>
-          <circle cx="230" cy="210" r="180" fill="url(#glass)" stroke="#8a8f94" stroke-width="26"/>
-          <circle cx="230" cy="210" r="167" fill="none" stroke="#fff" stroke-width="3" opacity=".6"/>
-          <path d="M110 130 A140 140 0 0 1 200 72" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".85"/>
-          <path d="M300 340 A140 140 0 0 0 340 290" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+          <circle class="lens-hit" cx="230" cy="210" r="180" fill="url(#glass)" stroke="#8a8f94" stroke-width="26"
+                  role="button" tabindex="0" aria-pressed="false" aria-label="Лупа: увеличить текст"/>
+          <circle cx="230" cy="210" r="167" fill="none" stroke="#fff" stroke-width="3" opacity=".6" pointer-events="none"/>
+          <path d="M110 130 A140 140 0 0 1 200 72" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".85" pointer-events="none"/>
+          <path d="M300 340 A140 140 0 0 0 340 290" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".5" pointer-events="none"/>
         </g>
       </svg>
       <h1>Ольга</h1>
@@ -208,92 +62,14 @@ footer.note{padding:20px 0 32px;font-family:"Segoe UI",sans-serif;font-size:.75r
   <div class="eyebrow">Обо мне</div>
   <h2>Тестировщик по профессии, путешественница по натуре</h2>
   <ul class="traits about-blocks">
-      <li><b>Профессия</b>QA Engineer</li>
-      <li><b>Сейчас</b>E2E-тестирование SAP-решений</li>
-      <li><b>E-commerce</b>Интернет-магазины на платформе SAP Hybris</li>
-      <li><b>Направления</b>Web, mobile, desktop, игры</li>
-      <li><b>Инструменты</b>Jira, TestRail, Azure DevOps, BrowserStack</li>
-      <li><b>Данные</b>MySQL, PostgreSQL, тестирование API</li>
-      <li><b>Процессы</b>Scrum и Kanban</li>
-      <li><b>В профессии</b>С 2022 года: курсы, стажировка в a1qa, коммерческие проекты</li>
-      <li><b>Образование</b>Туризм и преподаватель английского языка</li>
-      <li><b>Языки</b>Английский (B2), русский</li>
-      <li><b>Увлечения</b>Путешествия, спорт, дача</li>
+    <li><b>Профессия</b>QA Engineer</li>
+    <li><b>Сейчас</b>E2E-тестирование SAP-решений</li>
+    <li><b>Направления</b>Web, mobile, desktop, игры</li>
   </ul>
-</section>
-
-<section id="skills">
-  <div class="eyebrow">Образование и навыки</div>
-  <h2>Чему училась и что умею</h2>
-  <div class="cols">
-    <div class="card">
-      <h3>Образование и курсы</h3>
-      <ul>
-        <li>Claude Code <small>Belhard · октябрь 2026</small></li>
-        <li>Тестирование мобильных приложений <small>IT Academy · октябрь 2025</small></li>
-        <li>Основы разработки сайтов <small>Belhard · декабрь 2024</small></li>
-        <li>Функциональное тестирование <small>IT Academy · декабрь 2023</small></li>
-        <li>Функциональное тестирование <small>QA Academy · декабрь 2021 — февраль 2022</small></li>
-        <li>Институт предпринимательства, экономики и менеджмента, туризм <small>2005 — 2011</small></li>
-        <li>Минский государственный лингвистический университет, преподаватель английского <small>2006 — 2010</small></li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Навыки</h3>
-      <div class="chips">
-        <span class="chip">Чек-листы</span>
-        <span class="chip">Баг-репорты</span>
-        <span class="chip">Тест-кейсы</span>
-        <span class="chip">Тест-планы</span>
-        <span class="chip">Отчёты о качестве</span>
-        <span class="chip">Web</span>
-        <span class="chip">Mobile</span>
-        <span class="chip">Desktop</span>
-        <span class="chip">Игры</span>
-        <span class="chip">Jira</span>
-        <span class="chip">TestRail</span>
-        <span class="chip">Azure DevOps</span>
-        <span class="chip">BrowserStack</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">PostgreSQL</span>
-        <span class="chip">API</span>
-        <span class="chip">Scrum</span>
-        <span class="chip">Kanban</span>
-        <span class="chip">HTML · CSS</span>
-        <span class="chip">Android Studio</span>
-        <span class="chip">WordPress</span>
-        <span class="chip">Joomla</span>
-        <span class="chip">Bitrix</span>
-      </div>
-    </div>
+  <div class="next">
+    <a class="btn primary" href="about.html">Узнать больше</a>
+    <a class="btn" href="facts.html">Сыграть в «правда или миф»</a>
   </div>
-</section>
-
-<section id="travel">
-  <div class="eyebrow">Путешествия</div>
-  <h2>Люблю дороги и новые места</h2>
-  <p>Путешествия — мой способ перезагрузиться и взглянуть на привычное под другим углом. Новый город, язык и ритм жизни за пару дней возвращают внимание и любопытство, а это лучшая тренировка для головы.</p>
-  <div class="perks">
-    <article class="card"><h3>Новая перспектива</h3><p>Другие культуры и привычки показывают, что одну задачу можно решить десятью способами.</p></article>
-    <article class="card"><h3>Гибкость</h3><p>Пересадки, смена планов, незнакомые маршруты: учишься быстро адаптироваться и сохранять спокойствие.</p></article>
-    <article class="card"><h3>Внимание к деталям</h3><p>В поездке замечаешь мелочи: вывески, вкусы, звуки.</p></article>
-    <article class="card"><h3>Перезагрузка</h3><p>Смена обстановки возвращает энергию, идеи и желание делать больше, чем планировал.</p></article>
-  </div>
-  <div class="gallery">
-    <figure><img src="images/night-city.png" alt="Вечерний город: отель, скульптура и маяк в подсветке"></figure>
-    <figure><img src="images/insta/photo1.jpg" alt="Красный ретро-автомобиль, украшенный цветами"></figure>
-    <figure><img src="images/insta/photo9.jpg" alt="Ольга у каменной стены"></figure>
-  </div>
-</section>
-
-<section id="facts">
-  <div class="eyebrow">Интересные факты</div>
-  <h2>Коротко обо мне</h2>
-  <ul class="facts">
-    <li><strong>Путешествия</strong> — моя любовь. Диплом по туризму получила ещё до того, как стала тестировщиком.</li>
-    <li>Тестирую <strong>всё подряд</strong>: сайты, мобильные приложения, десктоп и даже кофемашины.</li>
-    <li>Постоянно учусь: <strong>пошла учиться вождению в зрелом возрасте</strong>. Учиться никогда не поздно.</li>
-  </ul>
 </section>
 
 </main>
@@ -311,5 +87,6 @@ footer.note{padding:20px 0 32px;font-family:"Segoe UI",sans-serif;font-size:.75r
 
 <footer class="note"><div class="wrap">© Ольга. Фото — из личного Instagram.</div></footer>
 
+<script src="site.js"></script>
 </body>
 </html>
