@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <title>Ольга-воительница</title>
+  <!-- фон -->
+  <rect width="300" height="400" fill="#efe6d1"/>
+  <circle cx="150" cy="150" r="120" fill="#e0833b" opacity=".2"/>
+  <path d="M0 320 L55 245 L105 300 L170 215 L232 290 L300 235 L300 400 L0 400 Z" fill="#2f7d6d" opacity=".35"/>
+  <path d="M0 360 L70 300 L130 345 L200 290 L300 350 L300 400 L0 400 Z" fill="#7a4a2b" opacity=".35"/>
+
+  <!-- меч за плечом -->
+  <g transform="rotate(10 252 262)">
+    <polygon points="247,70 252,50 257,70" fill="#cfd6d9" stroke="#5b6a6f" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="247" y="70" width="10" height="188" fill="#cfd6d9" stroke="#5b6a6f" stroke-width="2"/>
+    <line x1="252" y1="74" x2="252" y2="252" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <rect x="232" y="256" width="40" height="9" rx="4" fill="#c58a3b" stroke="#7a4a2b" stroke-width="2"/>
+    <rect x="248" y="265" width="8" height="30" fill="#7a4a2b"/>
+    <circle cx="252" cy="299" r="6" fill="#c58a3b" stroke="#7a4a2b" stroke-width="2"/>
+  </g>
+
+  <!-- плащ -->
+  <path d="M36 400 L50 308 Q64 256 104 248 L196 248 Q238 256 252 308 L264 400 Z" fill="#2f7d6d" stroke="#1f5a4e" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- волосы сзади: светло-русые, до плеч, слева шире -->
+  <path d="M92 150 Q88 90 150 86 Q214 92 208 154 Q222 214 240 272 Q208 264 198 224 L102 224 Q96 264 54 280 Q82 214 92 150 Z" fill="#b48659"/>
+
+  <!-- шея -->
+  <path d="M138 218 L138 264 Q150 276 162 264 L162 218 Z" fill="#e8b895"/>
+
+  <!-- доспех-жакет: тёмно-синий -->
+  <path d="M56 400 L68 306 Q90 274 134 264 Q150 284 166 264 Q210 274 232 306 L244 400 Z" fill="#2f3e4e" stroke="#1c2630" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M134 264 L150 316 L166 264" fill="none" stroke="#c58a3b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 352 Q150 336 204 352" fill="none" stroke="#c58a3b" stroke-width="4" stroke-linecap="round"/>
+  <!-- пуговица как на фото -->
+  <circle cx="196" cy="322" r="7" fill="#c9ced2" stroke="#7d868c" stroke-width="2.5"/>
+  <circle cx="194" cy="320" r="2" fill="#fff"/>
+  <!-- наплечники -->
+  <g stroke="#7a4a2b" stroke-width="3">
+    <ellipse cx="74" cy="296" rx="36" ry="24" transform="rotate(-24 74 296)" fill="#c58a3b"/>
+    <ellipse cx="226" cy="296" rx="36" ry="24" transform="rotate(24 226 296)" fill="#c58a3b"/>
+  </g>
+  <g fill="#7a4a2b">
+    <circle cx="58" cy="300" r="3"/><circle cx="74" cy="294" r="3"/><circle cx="90" cy="288" r="3"/>
+    <circle cx="242" cy="300" r="3"/><circle cx="226" cy="294" r="3"/><circle cx="210" cy="288" r="3"/>
+  </g>
+  <!-- кружевной воротник светло-серой блузки -->
+  <path d="M114 270 Q120 258 126 266 Q132 254 138 264 Q144 252 150 262 Q156 252 162 264 Q168 254 174 266 Q180 258 186 270 Q184 286 150 292 Q116 286 114 270 Z" fill="#d9dce0" stroke="#a9b0b7" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M130 274 Q150 284 170 274" fill="none" stroke="#a9b0b7" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- лицо: овальное, с заострённым подбородком -->
+  <path d="M105 160 Q103 116 150 108 Q197 116 195 160 Q193 202 173 224 Q161 238 150 239 Q139 238 127 224 Q107 202 105 160 Z" fill="#f3cdb0"/>
+  <ellipse cx="104" cy="170" rx="5" ry="9" fill="#f3cdb0"/>
+  <ellipse cx="196" cy="170" rx="5" ry="9" fill="#f3cdb0"/>
+  <!-- румянец и скулы -->
+  <circle cx="120" cy="192" r="9" fill="#f0a08a" opacity=".32"/>
+  <circle cx="180" cy="192" r="9" fill="#f0a08a" opacity=".32"/>
+  <!-- брови -->
+  <path d="M120 156 Q131 148 145 154" fill="none" stroke="#8a6240" stroke-width="3" stroke-linecap="round"/>
+  <path d="M155 154 Q169 148 180 156" fill="none" stroke="#8a6240" stroke-width="3" stroke-linecap="round"/>
+  <!-- глаза: миндалевидные, светло-карие -->
+  <path d="M122 167 Q132 158 143 167 Q132 175 122 167 Z" fill="#fff"/>
+  <path d="M157 167 Q168 158 178 167 Q168 175 157 167 Z" fill="#fff"/>
+  <circle cx="132" cy="167" r="4.2" fill="#7b6038"/>
+  <circle cx="168" cy="167" r="4.2" fill="#7b6038"/>
+  <circle cx="132" cy="167" r="2" fill="#2b1d16"/>
+  <circle cx="168" cy="167" r="2" fill="#2b1d16"/>
+  <circle cx="130.8" cy="165.8" r="1" fill="#fff"/>
+  <circle cx="166.8" cy="165.8" r="1" fill="#fff"/>
+  <path d="M121 167 Q132 157 144 167 M156 167 Q168 157 179 167" fill="none" stroke="#3a2a20" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- нос -->
+  <path d="M150 168 Q146 190 143 196 Q150 200 157 196" fill="none" stroke="#d6a07e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- улыбка -->
+  <path d="M129 208 Q150 230 171 208 Q150 214 129 208 Z" fill="#b8323a" stroke="#9a2730" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M134 210 Q150 222 166 210 Q150 215 134 210 Z" fill="#fff"/>
+  <path d="M126 204 Q127 209 131 211 M174 204 Q173 209 169 211" fill="none" stroke="#d6a07e" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- волосы спереди: пробор слева от центра -->
+  <path d="M132 102 Q98 112 102 180 Q108 140 126 128 Q130 116 132 102 Z" fill="#a47647"/>
+  <path d="M132 102 Q196 100 198 178 Q188 134 154 124 Q138 120 132 102 Z" fill="#a47647"/>
+  <path d="M132 103 Q134 114 138 120" fill="none" stroke="#7d5632" stroke-width="2" stroke-linecap="round"/>
+  <!-- золотистые пряди -->
+  <path d="M112 132 Q124 114 132 108 M118 150 Q122 134 134 120 M168 118 Q188 128 192 152 M178 126 Q192 140 194 166" fill="none" stroke="#dcb67f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M66 276 Q86 226 100 178 M80 268 Q94 228 104 192 M236 272 Q214 224 200 178 M222 266 Q206 228 196 192" fill="none" stroke="#dcb67f" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+
+  <!-- тонкая диадема -->
+  <path d="M106 134 Q150 112 196 136" fill="none" stroke="#c58a3b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150 116 L155 124 L150 131 L145 124 Z" fill="#2f7d6d" stroke="#c58a3b" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

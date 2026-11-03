@@ -1,0 +1,25 @@
+# Резюме и личные заметки: не для публичного репозитория
+Olga.pdf
+*.pdf
+CLAUDE.md
+___CLAUDE.md
+profile.md
+про-меня.md
+проекты.md
+факты.md
+.claude/
+
+# Секреты
+.env
+.env.*
+*.key
+*.pem
+
+# Мусор систем и редакторов
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+*.rar
+*.7z
+.vscode/
